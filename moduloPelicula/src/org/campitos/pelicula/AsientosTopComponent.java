@@ -5,8 +5,11 @@
  */
 package org.campitos.pelicula;
 
+import com.jc.model.Conexion;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+import java.sql.CallableStatement;
+import java.sql.Connection;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
@@ -145,6 +148,22 @@ class Mousesito implements MouseListener{
      System.out.println("me haz cliqueado!!!");
      System.out.println(e.getComponent().getName());
      
+     //CONEXIONSITA
+     try{
+       Conexion c=new Conexion();
+        Connection con=c.conectarse();
+     CallableStatement callate=con.prepareCall("{call guardar_pelicula(?,?,?,?)}");
+        callate.registerOutParameter(1,java.sql.Types.INTEGER);
+        callate.setString(2,"la muñeca mala");
+        callate.setString(3,"almodovar");
+         callate.setString(4,"Es de miedo uuuuy");
+      
+        callate.execute();
+        int pk=callate.getInt(1);
+        System.out.println("Se guardo con una pk:"+pk);
+     }catch(Exception es){
+         System.out.println("paso esto:"+es.getMessage());
+     }
 
     }
 

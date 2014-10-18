@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>org.netbeans.modules.apisupport.project</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/nb-module-project/3">
+            <code-name-base>org.campitos.driver</code-name-base>
+            <suite-component/>
+            <module-dependencies/>
+            <public-packages>
+                <package>oracle.core.lmx</package>
+                <package>oracle.core.lvf</package>
+                <package>oracle.jdbc</package>
+                <package>oracle.jdbc.aq</package>
+                <package>oracle.jdbc.connector</package>
+                <package>oracle.jdbc.dcn</package>
+                <package>oracle.jdbc.diagnostics</package>
+                <package>oracle.jdbc.driver</package>
+                <package>oracle.jdbc.internal</package>
+                <package>oracle.jdbc.oci</package>
+                <package>oracle.jdbc.oracore</package>
+                <package>oracle.jdbc.pool</package>
+                <package>oracle.jdbc.rowset</package>
+                <package>oracle.jdbc.util</package>
+                <package>oracle.jdbc.xa</package>
+                <package>oracle.jdbc.xa.client</package>
+                <package>oracle.jpub.runtime</package>
+                <package>oracle.net.ano</package>
+                <package>oracle.net.aso</package>
+                <package>oracle.net.jdbc.TNSAddress</package>
+                <package>oracle.net.jdbc.nl</package>
+                <package>oracle.net.jdbc.nl.mesg</package>
+                <package>oracle.net.jndi</package>
+                <package>oracle.net.ns</package>
+                <package>oracle.net.nt</package>
+                <package>oracle.net.resolver</package>
+                <package>oracle.security.o3logon</package>
+                <package>oracle.security.o5logon</package>
+                <package>oracle.sql</package>
+                <package>oracle.sql.converter</package>
+            </public-packages>
+            <class-path-extension>
+                <runtime-relative-path>ext/ojdbc6.jar</runtime-relative-path>
+                <binary-origin>release/modules/ext/ojdbc6.jar</binary-origin>
+            </class-path-extension>
+        </data>
+    </configuration>
+</project>
